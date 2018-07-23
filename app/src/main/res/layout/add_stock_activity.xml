@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <EditText
+            android:id="@+id/edit_account"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:hint="账户名"
+            />
+        <EditText
+            android:id="@+id/edit_sum"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:hint="总资产"
+            android:inputType="number"
+            />
+        <EditText
+            android:id="@+id/edit_ratio"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:hint="80"
+            android:inputType="number"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:background="@null"
+            android:enabled="false"
+            android:text="%"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLength="6"
+            android:id="@+id/stock_id"
+            android:hint="@string/stock_code"
+            android:layout_weight="1" />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLength="6"
+            android:id="@+id/stock_cost"
+            android:hint="@string/stock_cost"
+            android:layout_weight="1" />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLength="6"
+            android:id="@+id/stock_quantity"
+            android:hint="@string/stock_quantity"
+            android:layout_weight="1" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_add_label"
+            android:onClick="addStock" />
+    </LinearLayout>
+</LinearLayout>
